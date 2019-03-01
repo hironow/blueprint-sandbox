@@ -4,6 +4,18 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.css$/, // css-loader for external styles without css-modules
+        include: /node_modules/,
+        use: [
+          {
+            loader: "style-loader"
+          },
+          {
+            loader: "css-loader"
+          }
+        ]
+      },
+      {
         test: /\.*(ts|tsx)$/,
         exclude: /node_modules/,
         use: [

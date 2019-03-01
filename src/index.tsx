@@ -1,5 +1,9 @@
 import React, {useState} from "react";
 import * as ReactDOM from "react-dom";
+import "normalize.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
+
+import {Button} from "@blueprintjs/core";
 
 // HelloProps
 type HelloProps = {
@@ -17,7 +21,7 @@ const App: React.FC = () => {
             <Hello name="react"/>
             <h3>
                 Count: {count}
-                <button onClick={() => setCount(count + 1)}>Count</button>
+                <Button intent="success" text="Count" onClick={() => setCount(count + 1)}/>
             </h3>
         </React.Fragment>
     )
