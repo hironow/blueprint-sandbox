@@ -4,6 +4,7 @@ import "normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 
 import { Button } from "@blueprintjs/core";
+import Game from "./game";
 
 // HelloProps
 type HelloProps = {
@@ -27,6 +28,8 @@ const App: React.FC = () => {
           onClick={() => setCount(count + 1)}
         />
       </h3>
+
+      <Game />
     </React.Fragment>
   );
 };
