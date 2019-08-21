@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
     "fmt": "prettier --write {*,src/**/*}"
   },
   "keywords": [],
@@ -27,6 +28,6 @@
     "ts-loader": "^5.3.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.2.1"
+    "webpack-dev-server": "^3.8.0"
   }
 }

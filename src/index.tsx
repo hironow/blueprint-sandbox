@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom";
 import "normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
 import { Button } from "@blueprintjs/core";
+import Hoge from "./components/Hoge";
 
 // HelloProps
 type HelloProps = {
@@ -27,6 +28,8 @@ const App = () => {
           onClick={() => setCount(count + 1)}
         />
       </h3>
+
+      <Hoge/>
     </>
   );
 };
