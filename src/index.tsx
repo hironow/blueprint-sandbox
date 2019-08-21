@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import * as ReactDOM from "react-dom";
 import "normalize.css";
 import "@blueprintjs/core/lib/css/blueprint.css";
-
 import { Button } from "@blueprintjs/core";
 
 // HelloProps
@@ -11,13 +10,14 @@ type HelloProps = {
 };
 
 // Hello
-const Hello: React.FC<HelloProps> = ({ name }) => <h1>Hello {name}</h1>;
+const Hello = ({ name }: HelloProps) => <h1>Hello {name}</h1>;
 
 // App
-const App: React.FC = () => {
+const App = () => {
   const [count, setCount] = useState(0);
+
   return (
-    <React.Fragment>
+    <>
       <Hello name="react" />
       <h3>
         Count: {count}
@@ -27,7 +27,7 @@ const App: React.FC = () => {
           onClick={() => setCount(count + 1)}
         />
       </h3>
-    </React.Fragment>
+    </>
   );
 };
 

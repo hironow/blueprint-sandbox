@@ -11,18 +11,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@blueprintjs/core": "^3.13.0",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "typescript": "^3.3.3333"
+    "@blueprintjs/core": "^3.18.0",
+    "react": "^16.9",
+    "react-dom": "^16.9",
+    "typescript": "^3.5"
   },
   "devDependencies": {
     "@types/moment-timezone": "^0.5.10",
-    "@types/react": "^16.8.6",
-    "@types/react-dom": "^16.8.2",
+    "@types/react": "^16.9",
+    "@types/react-dom": "^16.9",
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
-    "prettier": "1.16.4",
+    "prettier": "1.18.1",
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.3",
     "webpack": "^4.29.6",
